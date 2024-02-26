@@ -1,14 +1,12 @@
 def main():
-    print_square(3)
+    height = int(input("Height: "))
+    pyramid(height)
 
 
-def print_square(size):
-    for i in range(size):
-        print_row(size)
+def pyramid(n):
+    for i in range(n):
+        print("#" * (i + 1))
 
 
-def print_row(width):
-    print("#" * width)
-
-
-main()
+if __name__ == "__main__":
+    main()
