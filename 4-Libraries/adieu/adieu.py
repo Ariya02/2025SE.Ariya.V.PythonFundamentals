@@ -1,20 +1,12 @@
 import inflect
 
-p = inflect.engine
+p = inflect.engine()
+names = []
+while True:
+    try:
+        print("Enter names: ")
+        names.append(input())
+    except EOFError:
+        break
 
-name = input("Enter names")
-name = {}
-plural = p.join(name, final_sep="")
-adieu = "Adieu, adieu to"
-
-try:
-    while True:
-        size = len(name)
-        if size > 1:
-            print(plural)
-        elif size == 1:
-            print(adieu, name)
-        else:
-            "incorrect input"
-except EOFError:
-    ("No more names")
+print(f"Adieu, adieu, to {p.join(names)}")
