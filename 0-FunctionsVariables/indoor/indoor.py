@@ -1,6 +1,4 @@
-def main():
-    x = str.lower(input("Type in an UPPERCASE word or phrase"))
-    print(x)
+indoor = input("Enter a phrase or sentence is capital: ")
+lowercase = indoor.lower()
 
-
-main()
+print(lowercase)
