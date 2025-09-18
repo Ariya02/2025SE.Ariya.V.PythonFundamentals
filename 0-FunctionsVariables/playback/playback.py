@@ -1,7 +1,3 @@
-def main():
-    routine = input("What is your daily routine? ")
-    routine = routine.replace(" ", "...")
-    print(routine)
-
-
-main()
+userInput = input("Enter something: ")
+space = userInput.replace(" ", "...")
+print(space)
