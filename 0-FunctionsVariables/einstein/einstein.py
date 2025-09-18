@@ -1,5 +1,4 @@
-m = input("provide a mass in kilograms")
-c = int(300000000)
-
-E = m * c
-print(E)
+mass = input("Mass as an integer: ")
+em = int(mass * 300000000)
+energy = em**2
+print(energy)
