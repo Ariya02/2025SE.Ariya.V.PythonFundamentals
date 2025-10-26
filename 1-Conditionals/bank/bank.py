@@ -1,10 +1,8 @@
-greeting = input("Type a greeting ")
+greeting = (input("Enter greeting: ")).lower()
 
-bank_greeting = greeting.strip().lower()
-
-if bank_greeting.startswith("hello"):
+if greeting == "hello":
     print("$0")
-elif bank_greeting.startswith("h"):
+elif greeting.startswith("h") == True:
     print("$20")
 else:
     print("$100")
